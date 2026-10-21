@@ -1,0 +1,1 @@
+Gra została zakodowana w środowisku vs code z kompilatorem MSYS2 URCT64 Shell
