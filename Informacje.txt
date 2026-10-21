@@ -1,1 +1,4 @@
-Gra została zakodowana w środowisku vs code z kompilatorem MSYS2 URCT64 Shell
+Gra została zakodowana w środowisku vs code z kompilatorem MSYS2 URCT64 Shell.
+W tym terminalu była testowana i odpalana za pomocą:
+    g++ blaziak_game.cpp -o blaziak_game.exe
+    ./blaziak_game.exe
