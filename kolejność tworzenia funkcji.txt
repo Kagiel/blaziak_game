@@ -1,0 +1,39 @@
+Kolejność funkcji w projekcie „Koło Fortuny”
+
+1	menu_start()	Menu główne
+2	konfiguruj_gre()	Ustawienie liczby graczy i rund
+3	wczytaj_graczy()	Pobranie imion
+4	utworz_baze_hasel()	Przygotowanie kategorii i haseł
+5	rozpocznij_gre()	Zarządzanie wszystkimi rundami
+6	losuj_haslo()	Losowanie hasła
+7	rozegraj_runde()	Zarządzanie jedną rundą
+8	wyswietl_menu_gracza()	Menu podczas tury
+9	losuj_pole_kola()	Losowanie pola koła
+10	obsluz_litere()	Sprawdzanie litery i punktów
+11	zgadnij_haslo()	Próba odgadnięcia hasła
+12	nastepny_gracz()	Zmiana aktywnego gracza
+13	wyswietl_wyniki()	Aktualna punktacja
+14	wyswietl_podsumowanie()	Wyniki końcowe i zwycięzca
+
+menu_start()
+  |
+  if (start) -> konfiguruj_gre()
+  |                     |
+  |                     ├── Pobierz il_graczy
+  if (close) -> exit    ├── Pobierz il_rund
+                        |
+                        ├── wczytaj_graczy()
+                        |
+                        ├── utworz_baze_hasel()
+                        |
+                        └── rozpocznij_gre()
+                                |
+                                └── PĘTLA RUND
+                                    |
+                                    └── rozegraj_runde()
+                                            |
+                                            └── PĘTLA GRACZY
+                                                    |
+                                                    ├── gracz 1
+                                                    ├── gracz 2 (jeśli istnieje)
+                                                    └── gracz 3 (jeśli istnieje)
