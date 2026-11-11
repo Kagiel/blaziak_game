@@ -2,3 +2,15 @@ Gra została zakodowana w środowisku vs code z kompilatorem MSYS2 URCT64 Shell.
 W tym terminalu była testowana i odpalana za pomocą:
     g++ blaziak_game.cpp -o blaziak_game.exe
     ./blaziak_game.exe
+
+___________________________________________________________________________
+
+Przygotowanie programu do uruchamiania
+
+Program został ponownie skompilowany przy użyciu kompilatora G++ z opcją -static:
+
+g++ blaziak_game.cpp -o blaziak_game.exe -static
+
+Opcja -static pozwala dołączyć statycznie dostępne biblioteki do pliku wykonywalnego .exe. Dzięki temu rozwiązano problem z brakiem biblioteki libstdc++-6.dll, która była wymagana do uruchomienia programu.
+
+Gotowy plik blaziak_game.exe został umieszczony w repozytorium GitHub. Użytkownik może pobrać projekt za pomocą git clone, a następnie uruchomić grę bezpośrednio z terminala Windows, bez konieczności instalowania MSYS2 ani kompilatora G++.
