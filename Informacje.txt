@@ -14,3 +14,7 @@ g++ blaziak_game.cpp -o blaziak_game.exe -static
 Opcja -static pozwala dołączyć statycznie dostępne biblioteki do pliku wykonywalnego .exe. Dzięki temu rozwiązano problem z brakiem biblioteki libstdc++-6.dll, która była wymagana do uruchomienia programu.
 
 Gotowy plik blaziak_game.exe został umieszczony w repozytorium GitHub. Użytkownik może pobrać projekt za pomocą git clone, a następnie uruchomić grę bezpośrednio z terminala Windows, bez konieczności instalowania MSYS2 ani kompilatora G++.
+
+w skrócie: po każdej zmianie kodu musze zrobić w MSYS UCRT64:
+1) cd 
+2) g++ blaziak_game.cpp -o blaziak_game.exe -static
