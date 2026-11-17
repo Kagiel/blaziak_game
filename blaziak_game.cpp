@@ -454,7 +454,8 @@ vector<Gracz> wczytaj_graczy_i_imiona(int liczba_rund, int liczba_graczy) {
     for (int j=0; j<gracze.size(); j++) {
         cout << "Gracz " << (j + 1) << ": " << gracze[j].imie << "  | Punkty: " << gracze[j].punkty << endl;
     }
-
+    cout << "\nNacisnij ENTER, aby kontynuowac...";
+    cin.get();
 
     return gracze;
 }
